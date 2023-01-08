@@ -12,6 +12,8 @@ struct HomeView: View {
     @AppStorage("onboarding")
     var isOnboardingViewActive = true
     
+    @State private var isAnimating = false
+    
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
@@ -22,7 +24,14 @@ struct HomeView: View {
                 Image("character-2")
                     .resizable()
                     .scaledToFit()
-                .padding()
+                    .padding()
+                    .offset(y: isAnimating ? 35 : -35)
+                    .animation(
+                        Animation
+                            .easeOut(duration: 4)
+                            .repeatForever(),
+                        value: isAnimating
+                    )
             }
             
             Text("It's not how much we give but bla bla bla bla bla bla")
@@ -35,7 +44,9 @@ struct HomeView: View {
             Spacer()
             
             Button {
-                isOnboardingViewActive = true
+                withAnimation {
+                    isOnboardingViewActive = true
+                }
             } label: {
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)
@@ -47,6 +58,11 @@ struct HomeView: View {
             .buttonStyle(.borderedProminent)
             .buttonBorderShape(.capsule)
             .controlSize(.large)
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                isAnimating = true
+            })
         }
     }
 }
