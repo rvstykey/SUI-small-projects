@@ -59,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				FC9A96822969DF0E007792B4 /* Info.plist */,
-				FC9A96812969DE21007792B4 /* Utils */,
 				FC9A96802969DE13007792B4 /* Views */,
 				FC9A96712969DC79007792B4 /* RestartApp.swift */,
 				FC9A967F2969DE0A007792B4 /* Screens */,
@@ -93,13 +92,6 @@
 				FC9A96872969EC43007792B4 /* CircleGroupView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FC9A96812969DE21007792B4 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
