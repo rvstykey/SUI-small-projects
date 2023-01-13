@@ -8,33 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isNight = false
+    
     var body: some View {
         ZStack {
-            BackgroundView(topColor: .blue, bottomColor: Color("lightBlue"))
+            BackgroundView(isNight: $isNight)
             
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
                 
-                MainWeatherStatusView(imageName: "cloud.sun.fill", temperature: 76)
+                MainWeatherStatusView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.fill", temperature: 76)
                 
                 HStack(spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 76)
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 76)
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 76)
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 76)
-                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 76)
+                    WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 74)
+                    WeatherDayView(dayOfWeek: "WED", imageName: "sun.max.fill", temperature: 88)
+                    WeatherDayView(dayOfWeek: "THU", imageName: "wind.snow", temperature: 55)
+                    WeatherDayView(dayOfWeek: "FRI", imageName: "sunset.fill", temperature: 68)
+                    WeatherDayView(dayOfWeek: "SAT", imageName: "snow", temperature: 25)
                 }
                 
                 Spacer()
                 
                 Button {
-                    print("tapped")
+                    isNight.toggle()
                 } label: {
                     MainButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
                 }
                 
                 Spacer()
-
             }
         }
     }
@@ -69,12 +70,13 @@ struct WeatherDayView: View {
 }
 
 struct BackgroundView: View {
-    var topColor: Color
-    var bottomColor: Color
+    @Binding var isNight: Bool
     
     var body: some View {
-        LinearGradient(colors: [topColor, bottomColor], startPoint: .topLeading, endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(.all)
+        LinearGradient(
+            colors: [isNight ? .black : .blue, isNight ? .gray : Color("lightBlue")],
+            startPoint: .topLeading, endPoint: .bottomTrailing)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
