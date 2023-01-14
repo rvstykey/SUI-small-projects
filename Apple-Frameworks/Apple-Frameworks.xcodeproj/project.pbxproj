@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		FC2EB1232972A6950001409D /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EB1222972A6950001409D /* Apple_FrameworksApp.swift */; };
-		FC2EB1252972A6950001409D /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EB1242972A6950001409D /* FrameworkGridView.swift */; };
 		FC2EB1272972A6960001409D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2EB1262972A6960001409D /* Assets.xcassets */; };
 		FC2EB12A2972A6960001409D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2EB1292972A6960001409D /* Preview Assets.xcassets */; };
 		FC2EB1312972A6D30001409D /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EB1302972A6D30001409D /* Framework.swift */; };
+		FCADC9F22972AAC200D32D50 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9F12972AAC200D32D50 /* FrameworkGridView.swift */; };
+		FCADC9F52972B56100D32D50 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9F42972B56100D32D50 /* FrameworkTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC2EB11F2972A6950001409D /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2EB1222972A6950001409D /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
-		FC2EB1242972A6950001409D /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		FC2EB1262972A6960001409D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2EB1292972A6960001409D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC2EB1302972A6D30001409D /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		FCADC9F12972AAC200D32D50 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		FCADC9F42972B56100D32D50 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,10 @@
 		FC2EB1212972A6950001409D /* Apple-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCADC9F32972B54F00D32D50 /* Views */,
 				FC2EB1222972A6950001409D /* Apple_FrameworksApp.swift */,
-				FC2EB1242972A6950001409D /* FrameworkGridView.swift */,
 				FC2EB1302972A6D30001409D /* Framework.swift */,
+				FCADC9F12972AAC200D32D50 /* FrameworkGridView.swift */,
 				FC2EB1262972A6960001409D /* Assets.xcassets */,
 				FC2EB1282972A6960001409D /* Preview Content */,
 			);
@@ -68,6 +71,14 @@
 				FC2EB1292972A6960001409D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCADC9F32972B54F00D32D50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCADC9F42972B56100D32D50 /* FrameworkTitleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2EB1252972A6950001409D /* FrameworkGridView.swift in Sources */,
+				FCADC9F22972AAC200D32D50 /* FrameworkGridView.swift in Sources */,
 				FC2EB1312972A6D30001409D /* Framework.swift in Sources */,
+				FCADC9F52972B56100D32D50 /* FrameworkTitleView.swift in Sources */,
 				FC2EB1232972A6950001409D /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

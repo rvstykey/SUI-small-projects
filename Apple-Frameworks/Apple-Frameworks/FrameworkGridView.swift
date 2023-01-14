@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FrameworkGridView.swift
 //  Apple-Frameworks
 //
 //  Created by Rostislav Zapolsky on 14.01.23.
@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    
+    let columns = [GridItem(.flexible()),
+                   GridItem(.flexible()),
+                   GridItem(.flexible())]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) {
+                        FrameworkTitleView(framework: $0)
+                    }
+                }
+            }
+            .navigationTitle("🍎 Frameworks")
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FrameworkGridView_Previews: PreviewProvider {
     static var previews: some View {
         FrameworkGridView()
+            .preferredColorScheme(.dark)
     }
 }
