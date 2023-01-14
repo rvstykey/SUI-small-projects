@@ -17,8 +17,12 @@ struct FrameworkGridView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    ForEach(MockData.frameworks) {
-                        FrameworkTitleView(framework: $0)
+                    ForEach(MockData.frameworks) { framework in
+                        NavigationLink {
+                            FrameworkDetailsView(framework: framework)
+                        } label: {
+                            FrameworkTitleView(framework: framework)
+                        }
                     }
                 }
             }
