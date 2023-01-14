@@ -14,17 +14,7 @@ struct FrameworkDetailsView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.medium)
-                        .frame(width: 44, height: 44)
-                }
-            }
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
 
             Spacer()
             
@@ -33,6 +23,7 @@ struct FrameworkDetailsView: View {
             Text(framework.description)
                 .font(.body)
                 .padding()
+            
             Spacer()
             
             Button {

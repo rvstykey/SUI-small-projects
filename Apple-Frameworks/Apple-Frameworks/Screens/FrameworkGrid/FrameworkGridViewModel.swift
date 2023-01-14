@@ -5,14 +5,17 @@
 //  Created by Rostislav Zapolsky on 14.01.23.
 //
 
-import Foundation
+import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
     
     var selectedFramework: Framework? {
-        didSet {
-            isShowingDetailView = true
-        }
+        didSet { isShowingDetailView = true }
     }
+    
     @Published var isShowingDetailView = false
+    
+    let columns = [GridItem(.flexible()),
+                   GridItem(.flexible()),
+                   GridItem(.flexible())]
 }

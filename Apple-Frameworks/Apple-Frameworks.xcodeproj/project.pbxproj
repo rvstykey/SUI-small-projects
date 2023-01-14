@@ -17,6 +17,7 @@
 		FCADC9F92972BBEE00D32D50 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9F82972BBEE00D32D50 /* MainButton.swift */; };
 		FCADC9FB2972BF2B00D32D50 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */; };
 		FCADC9FD297310EF00D32D50 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9FC297310EF00D32D50 /* SafariView.swift */; };
+		FCADC9FF2973148700D32D50 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9FE2973148700D32D50 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FCADC9F82972BBEE00D32D50 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		FCADC9FC297310EF00D32D50 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		FCADC9FE2973148700D32D50 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,11 @@
 		FC2EB1212972A6950001409D /* Apple-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCADCA05297315F800D32D50 /* UIKit Components */,
+				FCADCA03297315BB00D32D50 /* Model */,
+				FCADCA002973157500D32D50 /* Screens */,
 				FCADC9F32972B54F00D32D50 /* Views */,
 				FC2EB1222972A6950001409D /* Apple_FrameworksApp.swift */,
-				FC2EB1302972A6D30001409D /* Framework.swift */,
-				FCADC9F12972AAC200D32D50 /* FrameworkGridView.swift */,
-				FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */,
-				FCADC9F62972B5FD00D32D50 /* FrameworkDetailsView.swift */,
 				FC2EB1262972A6960001409D /* Assets.xcassets */,
 				FC2EB1282972A6960001409D /* Preview Content */,
 			);
@@ -86,11 +87,61 @@
 		FCADC9F32972B54F00D32D50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCADCA04297315DB00D32D50 /* Buttons */,
 				FCADC9F42972B56100D32D50 /* FrameworkTitleView.swift */,
-				FCADC9F82972BBEE00D32D50 /* MainButton.swift */,
-				FCADC9FC297310EF00D32D50 /* SafariView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FCADCA002973157500D32D50 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA012973157C00D32D50 /* FrameworkGrid */,
+				FCADCA022973158900D32D50 /* FrameworkDetails */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FCADCA012973157C00D32D50 /* FrameworkGrid */ = {
+			isa = PBXGroup;
+			children = (
+				FCADC9F12972AAC200D32D50 /* FrameworkGridView.swift */,
+				FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */,
+			);
+			path = FrameworkGrid;
+			sourceTree = "<group>";
+		};
+		FCADCA022973158900D32D50 /* FrameworkDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FCADC9F62972B5FD00D32D50 /* FrameworkDetailsView.swift */,
+			);
+			path = FrameworkDetails;
+			sourceTree = "<group>";
+		};
+		FCADCA03297315BB00D32D50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC2EB1302972A6D30001409D /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCADCA04297315DB00D32D50 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FCADC9F82972BBEE00D32D50 /* MainButton.swift */,
+				FCADC9FE2973148700D32D50 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		FCADCA05297315F800D32D50 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCADC9FC297310EF00D32D50 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +216,7 @@
 			files = (
 				FCADC9F22972AAC200D32D50 /* FrameworkGridView.swift in Sources */,
 				FCADC9F72972B5FD00D32D50 /* FrameworkDetailsView.swift in Sources */,
+				FCADC9FF2973148700D32D50 /* XDismissButton.swift in Sources */,
 				FCADC9F92972BBEE00D32D50 /* MainButton.swift in Sources */,
 				FC2EB1312972A6D30001409D /* Framework.swift in Sources */,
 				FCADC9FD297310EF00D32D50 /* SafariView.swift in Sources */,
