@@ -16,6 +16,7 @@
 		FCADC9F72972B5FD00D32D50 /* FrameworkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9F62972B5FD00D32D50 /* FrameworkDetailsView.swift */; };
 		FCADC9F92972BBEE00D32D50 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9F82972BBEE00D32D50 /* MainButton.swift */; };
 		FCADC9FB2972BF2B00D32D50 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */; };
+		FCADC9FD297310EF00D32D50 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADC9FC297310EF00D32D50 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FCADC9F62972B5FD00D32D50 /* FrameworkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailsView.swift; sourceTree = "<group>"; };
 		FCADC9F82972BBEE00D32D50 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		FCADC9FA2972BF2B00D32D50 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		FCADC9FC297310EF00D32D50 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				FCADC9F42972B56100D32D50 /* FrameworkTitleView.swift */,
 				FCADC9F82972BBEE00D32D50 /* MainButton.swift */,
+				FCADC9FC297310EF00D32D50 /* SafariView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				FCADC9F72972B5FD00D32D50 /* FrameworkDetailsView.swift in Sources */,
 				FCADC9F92972BBEE00D32D50 /* MainButton.swift in Sources */,
 				FC2EB1312972A6D30001409D /* Framework.swift in Sources */,
+				FCADC9FD297310EF00D32D50 /* SafariView.swift in Sources */,
 				FCADC9F52972B56100D32D50 /* FrameworkTitleView.swift in Sources */,
 				FCADC9FB2972BF2B00D32D50 /* FrameworkGridViewModel.swift in Sources */,
 				FC2EB1232972A6950001409D /* Apple_FrameworksApp.swift in Sources */,
