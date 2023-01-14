@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FrameworkDetailsView: View {
     let framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView = false
     
     var body: some View {
@@ -27,8 +26,11 @@ struct FrameworkDetailsView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                MainButton(title: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .tint(.red)
         }
         .fullScreenCover(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
@@ -38,7 +40,7 @@ struct FrameworkDetailsView: View {
 
 struct FrameworkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailsView(framework: MockData.sampleFramework, isShowingDetailView: .constant(true))
+        FrameworkDetailsView(framework: MockData.sampleFramework)
             .preferredColorScheme(.dark)
     }
 }

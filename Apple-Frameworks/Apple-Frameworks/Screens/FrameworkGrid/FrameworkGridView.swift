@@ -12,18 +12,19 @@ struct FrameworkGridView: View {
     @StateObject var viewModel = FrameworkGridViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(MockData.frameworks) { framework in
-                    NavigationLink {
-                        FrameworkDetailsView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)
-                    } label: {
+                    NavigationLink(value: framework) {
                         FrameworkTitleView(framework: framework)
                     }
                 }
             }
             .listStyle(.inset)
             .navigationTitle("🍎 Frameworks")
+            .navigationDestination(for: Framework.self) {
+                FrameworkDetailsView(framework: $0)
+            }
         }
         .accentColor(Color(.label))
     }
