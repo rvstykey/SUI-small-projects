@@ -13,6 +13,8 @@
 		FCADCA1A2973C3C400D32D50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCADCA192973C3C400D32D50 /* Preview Assets.xcassets */; };
 		FCADCA212973C75D00D32D50 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA202973C75D00D32D50 /* ScannerViewController.swift */; };
 		FCADCA232973CE1000D32D50 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA222973CE1000D32D50 /* ScannerView.swift */; };
+		FCADCA252973D78100D32D50 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA242973D78100D32D50 /* Alert.swift */; };
+		FCADCA272973D7B200D32D50 /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA262973D7B200D32D50 /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FCADCA192973C3C400D32D50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCADCA202973C75D00D32D50 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		FCADCA222973CE1000D32D50 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		FCADCA242973D78100D32D50 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FCADCA262973D7B200D32D50 /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,10 @@
 		FCADCA112973C3C300D32D50 /* Barcode-Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				FCADCA2A2973D92900D32D50 /* Views */,
+				FCADCA282973D91000D32D50 /* Screens */,
+				FCADCA2C2973D94100D32D50 /* Utilities */,
 				FCADCA122973C3C300D32D50 /* Barcode_ScannerApp.swift */,
-				FCADCA202973C75D00D32D50 /* ScannerViewController.swift */,
-				FCADCA142973C3C300D32D50 /* BarcodeScannerView.swift */,
-				FCADCA222973CE1000D32D50 /* ScannerView.swift */,
 				FCADCA162973C3C400D32D50 /* Assets.xcassets */,
 				FCADCA182973C3C400D32D50 /* Preview Content */,
 			);
@@ -71,6 +75,48 @@
 				FCADCA192973C3C400D32D50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCADCA282973D91000D32D50 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA292973D91700D32D50 /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FCADCA292973D91700D32D50 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA142973C3C300D32D50 /* BarcodeScannerView.swift */,
+				FCADCA262973D7B200D32D50 /* BarcodeScannerViewModel.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		FCADCA2A2973D92900D32D50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA2B2973D92E00D32D50 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCADCA2B2973D92E00D32D50 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA202973C75D00D32D50 /* ScannerViewController.swift */,
+				FCADCA222973CE1000D32D50 /* ScannerView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		FCADCA2C2973D94100D32D50 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FCADCA242973D78100D32D50 /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCADCA272973D7B200D32D50 /* BarcodeScannerViewModel.swift in Sources */,
 				FCADCA152973C3C300D32D50 /* BarcodeScannerView.swift in Sources */,
 				FCADCA232973CE1000D32D50 /* ScannerView.swift in Sources */,
 				FCADCA212973C75D00D32D50 /* ScannerViewController.swift in Sources */,
+				FCADCA252973D78100D32D50 /* Alert.swift in Sources */,
 				FCADCA132973C3C300D32D50 /* Barcode_ScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
