@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0A0DDB2976766900F3C6A3 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A0DDA2976766900F3C6A3 /* Appetizer.swift */; };
 		FCADCA3A2973DA4C00D32D50 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA392973DA4C00D32D50 /* AppetizersApp.swift */; };
 		FCADCA3C2973DA4C00D32D50 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA3B2973DA4C00D32D50 /* AppetizerTabView.swift */; };
 		FCADCA3E2973DA4D00D32D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCADCA3D2973DA4D00D32D50 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0A0DDA2976766900F3C6A3 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		FCADCA362973DA4C00D32D50 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCADCA392973DA4C00D32D50 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		FCADCA3B2973DA4C00D32D50 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				FCADCA492973DAA600D32D50 /* AppetizerListView.swift */,
 				FCADCA4D2973DADE00D32D50 /* AccountView.swift */,
 				FCADCA4B2973DAB000D32D50 /* OrderView.swift */,
+				FC0A0DDA2976766900F3C6A3 /* Appetizer.swift */,
 				FCADCA3D2973DA4D00D32D50 /* Assets.xcassets */,
 				FCADCA3F2973DA4D00D32D50 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0A0DDB2976766900F3C6A3 /* Appetizer.swift in Sources */,
 				FCADCA3C2973DA4C00D32D50 /* AppetizerTabView.swift in Sources */,
 				FCADCA4C2973DAB000D32D50 /* OrderView.swift in Sources */,
 				FCADCA3A2973DA4C00D32D50 /* AppetizersApp.swift in Sources */,
