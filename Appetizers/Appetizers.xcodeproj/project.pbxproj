@@ -14,13 +14,14 @@
 		FC51D1CF29769474005D1361 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1CE29769474005D1361 /* AppetizerListViewModel.swift */; };
 		FC51D1D12976965C005D1361 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D02976965C005D1361 /* Alert.swift */; };
 		FC51D1D52977D41A005D1361 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D42977D41A005D1361 /* LoadingView.swift */; };
-		FC51D1D72977D4AE005D1361 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D62977D4AE005D1361 /* Color+Extensions.swift */; };
+		FC51D1D72977D4AE005D1361 /* Color+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D62977D4AE005D1361 /* Color+UI.swift */; };
 		FC51D1D92977E0D4005D1361 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D82977E0D4005D1361 /* RemoteImage.swift */; };
 		FC51D1EB29791E17005D1361 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1EA29791E17005D1361 /* AppetizerDetailView.swift */; };
 		FC51D1EE29793C99005D1361 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1ED29793C99005D1361 /* MainButton.swift */; };
 		FC51D1F029793CD9005D1361 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1EF29793CD9005D1361 /* XDismissButton.swift */; };
 		FC51D1F22979425B005D1361 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1F12979425B005D1361 /* AccountViewModel.swift */; };
-		FC51D1F4297943F1005D1361 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1F3297943F1005D1361 /* String+Extension.swift */; };
+		FC51D1F4297943F1005D1361 /* String+EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1F3297943F1005D1361 /* String+EmailValidation.swift */; };
+		FC51D1F62979563E005D1361 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1F52979563E005D1361 /* User.swift */; };
 		FCADCA3A2973DA4C00D32D50 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA392973DA4C00D32D50 /* AppetizersApp.swift */; };
 		FCADCA3C2973DA4C00D32D50 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADCA3B2973DA4C00D32D50 /* AppetizerTabView.swift */; };
 		FCADCA3E2973DA4D00D32D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCADCA3D2973DA4D00D32D50 /* Assets.xcassets */; };
@@ -38,13 +39,14 @@
 		FC51D1CE29769474005D1361 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		FC51D1D02976965C005D1361 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FC51D1D42977D41A005D1361 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		FC51D1D62977D4AE005D1361 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		FC51D1D62977D4AE005D1361 /* Color+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+UI.swift"; sourceTree = "<group>"; };
 		FC51D1D82977E0D4005D1361 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		FC51D1EA29791E17005D1361 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		FC51D1ED29793C99005D1361 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		FC51D1EF29793CD9005D1361 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		FC51D1F12979425B005D1361 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		FC51D1F3297943F1005D1361 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FC51D1F3297943F1005D1361 /* String+EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmailValidation.swift"; sourceTree = "<group>"; };
+		FC51D1F52979563E005D1361 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FCADCA362973DA4C00D32D50 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCADCA392973DA4C00D32D50 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		FCADCA3B2973DA4C00D32D50 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -125,8 +127,8 @@
 		FC51D1E02977E4FA005D1361 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FC51D1D62977D4AE005D1361 /* Color+Extensions.swift */,
-				FC51D1F3297943F1005D1361 /* String+Extension.swift */,
+				FC51D1D62977D4AE005D1361 /* Color+UI.swift */,
+				FC51D1F3297943F1005D1361 /* String+EmailValidation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				FC0A0DDA2976766900F3C6A3 /* Appetizer.swift */,
+				FC51D1F52979563E005D1361 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,14 +314,15 @@
 				FC0A0DDB2976766900F3C6A3 /* Appetizer.swift in Sources */,
 				FC0A0DDD29767EBF00F3C6A3 /* AppetizerListCell.swift in Sources */,
 				FC51D1F029793CD9005D1361 /* XDismissButton.swift in Sources */,
-				FC51D1F4297943F1005D1361 /* String+Extension.swift in Sources */,
+				FC51D1F4297943F1005D1361 /* String+EmailValidation.swift in Sources */,
 				FC0A0DE12976809B00F3C6A3 /* AppetizersError.swift in Sources */,
 				FC51D1F22979425B005D1361 /* AccountViewModel.swift in Sources */,
 				FC51D1CF29769474005D1361 /* AppetizerListViewModel.swift in Sources */,
 				FCADCA3C2973DA4C00D32D50 /* AppetizerTabView.swift in Sources */,
+				FC51D1F62979563E005D1361 /* User.swift in Sources */,
 				FC51D1D52977D41A005D1361 /* LoadingView.swift in Sources */,
 				FCADCA4C2973DAB000D32D50 /* OrderView.swift in Sources */,
-				FC51D1D72977D4AE005D1361 /* Color+Extensions.swift in Sources */,
+				FC51D1D72977D4AE005D1361 /* Color+UI.swift in Sources */,
 				FC0A0DDF29767F8200F3C6A3 /* NetworkManager.swift in Sources */,
 				FC51D1D92977E0D4005D1361 /* RemoteImage.swift in Sources */,
 				FC51D1EB29791E17005D1361 /* AppetizerDetailView.swift in Sources */,
