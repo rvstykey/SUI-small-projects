@@ -25,9 +25,10 @@ struct OrderView: View {
                     Button {
                         
                     } label: {
-                        MainButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
-                            .padding(.bottom, 20)
+                        Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
+                    .standardButtonStyle()
+                    .padding(.bottom)
                 }
                 
                 if order.items.isEmpty {
