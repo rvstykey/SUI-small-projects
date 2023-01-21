@@ -36,7 +36,6 @@ extension String {
                 )
             }
         }
-        let queue = 1
         return self.wholeMatch(of: emailRegex) != nil
     }
 }
