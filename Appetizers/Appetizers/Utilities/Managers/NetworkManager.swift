@@ -8,7 +8,6 @@
 import UIKit
 
 final class NetworkManager {
-    typealias AppetizersCompletion = (Result<[Appetizer], AppetizersError>) -> Void
     
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
@@ -18,38 +17,23 @@ final class NetworkManager {
 
     private init() {}
     
-    func getAppetizers(completed: @escaping AppetizersCompletion) {
+    func getAppetizers() async throws -> [Appetizer] {
         guard let url = URL(string: appetizersURL) else {
-            completed(.failure(.invalidURL))
-            return
+            throw AppetizersError.invalidURL
         }
         
-        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-            guard error == nil else {
-                completed(.failure(.unableToComplete))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.invalidResponse))
-                return
-            }
-            
-            guard let data = data else {
-                completed(.failure(.invalidData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let data = try decoder.decode(Appetizers.self, from: data)
-                completed(.success(data.request))
-            } catch {
-                completed(.failure(.invalidData))
-            }
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            throw AppetizersError.invalidResponse
         }
         
-        task.resume()
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode(Appetizers.self, from: data).request
+        } catch {
+            throw AppetizersError.invalidData
+        }
     }
     
     func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
