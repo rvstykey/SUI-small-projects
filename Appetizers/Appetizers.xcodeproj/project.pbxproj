@@ -11,6 +11,7 @@
 		FC0A0DDD29767EBF00F3C6A3 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A0DDC29767EBF00F3C6A3 /* AppetizerListCell.swift */; };
 		FC0A0DDF29767F8200F3C6A3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A0DDE29767F8200F3C6A3 /* NetworkManager.swift */; };
 		FC0A0DE12976809B00F3C6A3 /* AppetizersError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A0DE02976809B00F3C6A3 /* AppetizersError.swift */; };
+		FC20699C297C0DDB00B9FC94 /* Date+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20699B297C0DDB00B9FC94 /* Date+Validation.swift */; };
 		FC51D1CF29769474005D1361 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1CE29769474005D1361 /* AppetizerListViewModel.swift */; };
 		FC51D1D12976965C005D1361 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D02976965C005D1361 /* Alert.swift */; };
 		FC51D1D52977D41A005D1361 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51D1D42977D41A005D1361 /* LoadingView.swift */; };
@@ -38,6 +39,7 @@
 		FC0A0DDC29767EBF00F3C6A3 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		FC0A0DDE29767F8200F3C6A3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FC0A0DE02976809B00F3C6A3 /* AppetizersError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersError.swift; sourceTree = "<group>"; };
+		FC20699B297C0DDB00B9FC94 /* Date+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Validation.swift"; sourceTree = "<group>"; };
 		FC51D1CE29769474005D1361 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		FC51D1D02976965C005D1361 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FC51D1D42977D41A005D1361 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FC51D1D62977D4AE005D1361 /* Color+UI.swift */,
+				FC20699B297C0DDB00B9FC94 /* Date+Validation.swift */,
 				FC51D1F3297943F1005D1361 /* String+EmailValidation.swift */,
 			);
 			path = Extensions;
@@ -334,6 +337,7 @@
 				FC0A0DDF29767F8200F3C6A3 /* NetworkManager.swift in Sources */,
 				FC51D1D92977E0D4005D1361 /* RemoteImage.swift in Sources */,
 				FC51D1EB29791E17005D1361 /* AppetizerDetailView.swift in Sources */,
+				FC20699C297C0DDB00B9FC94 /* Date+Validation.swift in Sources */,
 				FCADCA3A2973DA4C00D32D50 /* AppetizersApp.swift in Sources */,
 				FC51D1D12976965C005D1361 /* Alert.swift in Sources */,
 				FC51D200297A980A005D1361 /* CustomModifiers.swift in Sources */,
