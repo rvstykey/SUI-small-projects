@@ -23,7 +23,7 @@ struct FrameworkGridView: View {
             .listStyle(.inset)
             .navigationTitle("🍎 Frameworks")
             .navigationDestination(for: Framework.self) {
-                FrameworkDetailsView(framework: $0)
+                FrameworkDetailsView(viewModel: .init(framework: $0))
             }
         }
         .accentColor(Color(.label))
